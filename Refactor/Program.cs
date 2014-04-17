@@ -7,7 +7,7 @@ namespace Refactor
     {
         static void Main()
         {
-            var st = new List<IStrategyR>()
+            var st = new List<IStrategyR>
             {
                 new NotNullStrategy(),
                 new IsAdminStrategy(),
@@ -22,7 +22,7 @@ namespace Refactor
                 var tp = pc.Verify("asdfqwea1%%",true);
                 Console.WriteLine(tp.Item2);
             }
-            catch (NotImplementedException ex)
+            catch (NotImplementedException)
             {
                 Console.WriteLine("create");
             }
