@@ -2,7 +2,7 @@
 
 namespace Refactor
 {
-    class SqlRepository : IRepository
+    public class SqlRepository : IRepository
     {
         public void Create(string password, bool isAdmin)
         {

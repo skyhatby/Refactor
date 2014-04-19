@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Refactor
 {
-    class PasswordChecker
+    public class PasswordChecker : IPasswordChecker
     {
         private readonly IRepository _repo;
         private readonly List<IStrategyR> _str;

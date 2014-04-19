@@ -2,7 +2,7 @@
 
 namespace Refactor
 {
-    interface IStrategyR 
+    public interface IStrategyR 
     {
         Tuple<bool, string> VerifyRule(string password, bool isAdmin);
     }

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Refactor
 {
-    class NotNullStrategy : IStrategyR
+    public class NotNullStrategy : IStrategyR
     {
         public Tuple<bool, string> VerifyRule(string password, bool isAdmin)
         {
@@ -11,7 +11,7 @@ namespace Refactor
         }
     }
 
-    class LengthStrategy : IStrategyR
+    public class LengthStrategy : IStrategyR
     {
         public Tuple<bool, string> VerifyRule(string password, bool isAdmin)
         {
@@ -19,7 +19,7 @@ namespace Refactor
         }
     }
 
-    class LengthAdminStrategy : IStrategyR
+    public class LengthAdminStrategy : IStrategyR
     {
         public Tuple<bool, string> VerifyRule(string password, bool isAdmin)
         {
@@ -27,7 +27,7 @@ namespace Refactor
         }
     }
 
-    class NoAlphanumericalCharsStrategy : IStrategyR
+    public class NoAlphanumericalCharsStrategy : IStrategyR
     {
         public Tuple<bool, string> VerifyRule(string password, bool isAdmin)
         {
@@ -35,7 +35,7 @@ namespace Refactor
         }
     }
 
-    class NoDigitsStrategy : IStrategyR
+    public class NoDigitsStrategy : IStrategyR
     {
         public Tuple<bool, string> VerifyRule(string password, bool isAdmin)
         {
@@ -43,7 +43,7 @@ namespace Refactor
         }
     }
 
-    class IsAdminStrategy : IStrategyR
+    public class IsAdminStrategy : IStrategyR
     {
         public Tuple<bool, string> VerifyRule(string password, bool isAdmin)
         {

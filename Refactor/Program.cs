@@ -19,7 +19,7 @@ namespace Refactor
             try
             {
                 var pc = new PasswordChecker(new SqlRepository(), st);
-                var tp = pc.Verify("asdfqwea1%%",true);
+                var tp = pc.Verify("asdfqwea1%",true);
                 Console.WriteLine(tp.Item2);
             }
             catch (NotImplementedException)
